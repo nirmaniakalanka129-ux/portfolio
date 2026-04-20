@@ -111,7 +111,7 @@ section{
     gap: 10rem;
 }
 .about img{
-    width: 18vw;
+    width: 30vw;
     border-radius: 100%;
 }
 .info-box{
@@ -460,7 +460,7 @@ font-weight: 600;
         font-size: 1.5rem;
     }
     .about-container img{
-        width: 80vw;
+        width: 15vw;
     }
     .input-box input{
         padding: 0.5rem 3rem;
