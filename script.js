@@ -17,7 +17,7 @@ menuIcon.onclick=function(){
 };
 var visitbtn=document.getElementById("visit-github-btn")
 visitbtn.onclick=function(){
-    window.open("https://github.com/nirmaniakalanka129-ux/Personal-Portfolio", "_blank")
+    window.open("https://github.com/nirmaniakalanka129-ux", "_blank")
 };
 var igithub=document.getElementById("icon.github")
 igithub.onclick=function(){
