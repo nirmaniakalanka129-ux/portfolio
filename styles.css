@@ -111,7 +111,7 @@ section{
     gap: 10rem;
 }
 .about img{
-    width: 15vw;
+    width: 5vw;
     border-radius: 100%;
 }
 .info-box{
@@ -123,19 +123,19 @@ section{
     gap: 1.5rem;
 }
 .info-box h3{
-font-size: 1.2rem;
+font-size: 1rem;
 font-weight: 500;
 opacity: 0.8;
 }
 .info-box h1{
-font-size: 3rem;
+font-size: 2rem;
 font-weight: 600;
 }
 .info-box span{
     background: linear-gradient(to right, rgb(151, 29, 151),rgb(23, 101, 149));
     background-clip: text;
     color: transparent;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .btn-group{
     display: flex;
