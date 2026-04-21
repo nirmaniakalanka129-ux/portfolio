@@ -15,12 +15,6 @@ var navLinks=document.getElementById("nav-links")
 menuIcon.onclick=function(){
     navLinks.classList.toggle("active")
 };
-document.querySelectorAll("nav-links").forEach(n => n. addEventListener("click", () => {
-    navLinks.classlist.remove("active");
-}));
-
-
-
 var visitbtn=document.getElementById("visit-github-btn")
 visitbtn.onclick=function(){
     window.open("https://github.com/nirmaniakalanka129-ux", "_blank")
