@@ -418,6 +418,9 @@ font-weight: 600;
     .info-box h1{
         font-size: 3rem;
     }
+    .section-title{
+        font-size: 3rem;
+    }
     .input-box input{
         padding: 1rem 2rem;
         font-size: 1.8rem;
@@ -472,13 +475,16 @@ font-weight: 600;
         width: 40vw;
     }
     .info-box h3{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     .info-box h1{
         font-size: 2.5rem;
     }
     .info-box span{
-        font-size: 1.8rem
+        font-size: 1.5rem
+    }
+    .section-title{
+        font-size: 2.5rem;
     }
     .input-box input{
         padding: 0.5rem 3rem;
