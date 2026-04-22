@@ -95,28 +95,22 @@
 
  <section class="contact" id="contact">
    
-        <h2 class="section-title">Get In Touch!</h2>
- <div class="input-box">
-        <div class="input-row">
-            <div class="label-group">
-            <i class="fa-regular fa-user"></i>
-            <label for="userText">Name:</label></div>
-             <textarea type="userText" placeholder="Insert name"></textarea>
-            </div>
-         <div class="input-row">
-            <div class="label-group">
-            <i class="fa-regular fa-envelope"></i>
-            <label for="userText">Email:</label></div>
-            <textarea type="userText" placeholder="Insert email"></textarea>
-         </div>
-         <div class="input-row">
-            <div class="label-group">
-            <i class="fa-solid fa-pen"></i>
-            <label for="userText">Note:</label></div>
-             <textarea class="message-box" type="userText" placeholder="Insert text here"></textarea>
-         </div>
-        <div class="btn" id="btn">Send</div>
-    </div>
+        <h2>Contact Me</h2>
+     <div class="form-container">
+         <form id="contactForm">
+             <input type="text" id="name" placeholder="Enter Name">
+             <div class="error" id="nameError"></div>
+             <input type="text" id="email" placeholder="Enter Email">
+             <div class="error" id="emailError"></div>
+             <textarea id="message" placeholder="Your Message"></textarea>
+             <div class="error" id="messageError"></div>
+
+             <button type="submit">Send</button>
+             <div class="success" id="successMsg"></div>
+
+         </form>  
+     </div>
+                                                    
  </section>
  
  <footer>
