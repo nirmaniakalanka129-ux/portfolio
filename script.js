@@ -23,17 +23,18 @@ var igithub=document.getElementById("icon.github")
 igithub.onclick=function(){
     window.open("https://github.com/nirmaniakalanka129-ux", "_blank")
 };  
+var name = document.getElementById("name").value.trim();
+ var email = document.getElementById("email").value.trim();
+ var message = document.getElementById("message").value.trim();
+
+ var nameError = document.getElementById("nameError");
+ var emailError = document.getElementById("emailError");
+ var messageError = document.getElementById("messageError");
+ var successMsg = document.getElementById("successMsg");
+
 document.getElementById("contactForm").addEventListener("submit", function(e){
     e.preventDefault();
 
-    var name = document.getElementById("name").value.trim();
-    var email = document.getElementById("email").value.trim();
-    var message = document.getElementById("message").value.trim();
-
-    var nameError = document.getElementById("nameError");
-    var emailError = document.getElementById("emailError");
-    var messageError = document.getElementById("messageError");
-    var successMsg = document.getElementById("successMsg");
     nameError.textContent = "";
     emailError.textContent = "";
     messageError.textContent = "";
