@@ -1,3 +1,4 @@
+/// contact form validation ///
 document.getElementById("contactForm").addEventListener("submit", function(e){
     e.preventDefault();
 
@@ -10,7 +11,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e){
     var messageError = document.getElementById("messageError");
     var successMsg = document.getElementById("successMsg");
 
-
+/// this clears previous messages ///
     nameError.textContent = "";
     emailError.textContent = "";
     messageError.textContent = "";
@@ -41,6 +42,8 @@ document.getElementById("contactForm").addEventListener("submit", function(e){
         document.getElementById("contactForm").reset();
     }
 });
+
+/// buttons and icon handlers //
 var visitbtn=document.getElementById("visit-github-btn")
 visitbtn.onclick=function(){
     window.open("https://github.com/nirmaniakalanka129-ux", "_blank")
@@ -57,6 +60,8 @@ var blogbtn=document.getElementById("view-blog-btn")
 blogbtn.onclick=function(){
     window.open("https://medium.com/@nirmaniakalanka129/disneys-principles-of-animation-d1085ebddd12", "_blank")
 };
+
+/// for navigating in mobile view //
 var menuIcon=document.getElementById("menu-icon")
 var navLinks=document.getElementById("nav-links")
 menuIcon.onclick=function(){
