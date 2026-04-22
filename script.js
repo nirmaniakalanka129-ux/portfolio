@@ -23,3 +23,47 @@ var igithub=document.getElementById("icon.github")
 igithub.onclick=function(){
     window.open("https://github.com/nirmaniakalanka129-ux", "_blank")
 };  
+document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const nameError = document.getElementById("nameError");
+    const emailError = document.getElementById("emailError");
+    const messageError = document.getElementById("messageError");
+    const successMsg = document.getElementById("successMsg");
+    nameError.textContent = "";
+    emailError.textContent = "";
+    messageError.textContent = "";
+    successMsg.textContent = "";
+
+    let isValid = true;
+
+    if (name === "") {
+        nameError.textContent = "Name is required";
+        isValid = false;
+    }
+    const emailPattern = /^[^]+@[^]+\.[a-z]{2,3}$/;
+    if (email === "") {
+        emailError.textContent = " Email is required";
+        isValid = false;
+    }
+    else if (!email.match(emailPattern)) {
+        emailError.textContent = "Please enter a valid email address";
+        isValid = false;
+    }
+
+    if (message === "") {
+        messageError.textContent = "Message cannot be empty";
+        isValid = false;
+    }
+    if (isValid) {
+        successMsg.textContent = "Your Message was recorded!";
+        document.getElementById("contactForm").reset();
+    }
+});
+
+
+                                                        
