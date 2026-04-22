@@ -330,7 +330,7 @@ textarea{
     resize: none;
     align-items: center;
 }
-button{
+.form-container button{
     display: flex;
     justify-content: center;
     align-items: center;
