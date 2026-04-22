@@ -330,11 +330,10 @@ textarea{
     resize: none;
     align-items: center;
 }
-.form-container button{
+.form-btn{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 55px;
     border: 2px solid black;
     background: white;
     border-radius: 3rem;
