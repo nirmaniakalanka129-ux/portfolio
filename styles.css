@@ -334,6 +334,7 @@ textarea{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 25px;
     border: 2px solid black;
     background: white;
     border-radius: 3rem;
