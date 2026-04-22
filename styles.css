@@ -331,10 +331,10 @@ textarea{
     align-items: center;
 }
 .form-btn{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 200px;
+    margin: 0 auto;
     border: 2px solid black;
     background: white;
     border-radius: 3rem;
