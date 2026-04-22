@@ -26,14 +26,14 @@ igithub.onclick=function(){
 document.getElementById("contactForm").addEventListener("submit", function(e){
     e.preventDefault();
 
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
+    var name = document.getElementById("name").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var message = document.getElementById("message").value.trim();
 
-    const nameError = document.getElementById("nameError");
-    const emailError = document.getElementById("emailError");
-    const messageError = document.getElementById("messageError");
-    const successMsg = document.getElementById("successMsg");
+    var nameError = document.getElementById("nameError");
+    var emailError = document.getElementById("emailError");
+    var messageError = document.getElementById("messageError");
+    var successMsg = document.getElementById("successMsg");
     nameError.textContent = "";
     emailError.textContent = "";
     messageError.textContent = "";
