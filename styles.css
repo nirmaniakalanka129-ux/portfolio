@@ -289,70 +289,70 @@ font-weight: 600;
     font-weight: 300;
     padding: 0.5rem 0;
 }
-
-.input-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.form-container{
+    width: 100%;
     justify-content: center;
-    text-align: center;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-.input-box input{
+    align-items: center;
+    text-align: center:
     border-radius: 3rem;
-    border: 2px solid black;
-    padding: 1rem 3rem;
+    gap: 30px;
+    margin-top: 2rem;
+    padding: 1rem;
     font-size: 1rem;
+    overflow-x: hidden;
 }
-
-.input-row{
-    display: flex;
+.contact h2{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 4rem;
+}
+.form-container input,
+.form-container textarea{
+    display: block;
+    justify-content: center;
     align-items: center;
-    gap: 15px;
-    width: 60%;
-    max-width: 900px;
+    padding: 12px 15px;
+    width: 100%;
+    max-width: 500px;
     margin: 20px auto;
-}
-.label-group{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    min-width: 20px;
-}
-textarea{
-    flex: 1;
-    padding:  12px 15px;
+    margin-bottom: 35px;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 8px;
     font-size: 16px;
     outline: none;
     resize: none;
-    overflow: hidden;
+    overfllow: hidden;
 }
-.message-box{
-    flex: 1;
-    padding: 12px;
-    border: 2px solid black;
-    border-radius: 10px;
-    font-size: 16px;
+textarea{
+    padding: 12px 10px;
     height: 150px;
     overflow-y: auto;
     resize: none;
-    width: 60%;
     align-items: center;
 }
-.message-box::-webkit-scrollbar{
-    width: 6px;
+button{
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background: white;
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    text-wrap:nowrap;
+    transition: 0.2s ease-in-out;
 }
-.message-box::-webkit-scrollbar-thumb{
-    background: #888;
-    border-radius: 10px;
+.error{
+    color: red;
+    font-size: 20px;
+    margin-top: 1px;
 }
-.message-box::-webkit-scrollbar-thumb:hover{
-    background: #555;
+.success{
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
 }
-
 footer{
     bottom: 0;
     left: 0;
@@ -390,15 +390,9 @@ font-weight: 600;
     .skills-info{
         flex-direction: column;
     }
-    .input-box input{
-        padding: 2rem 5rem;
-        font-size: 2.5rem;
-    }
-    .input-box .input-row{
-        width: 70%;
-    }
-    .input-box i{
-        font-size: 2.5rem;
+    .form-container{
+        width: 100%;
+        padding: 1rem 2rem;
     }
 }
 @media(max-width:768px){
@@ -421,18 +415,15 @@ font-weight: 600;
     .section-title{
         font-size: 3rem;
     }
-    .input-box input{
-        padding: 1rem 2rem;
-        font-size: 1.8rem;
-    }
-    .input-box .input-row{
-        width: 100%;
-    }
-    .input-box input::placeholder{
-        font-size: 1rem;
-    }
-    .input-box i{
-        display: none;
+   .form-container{
+       width: 100%;
+       gap: 20px;
+       padding: 1rem;
+   }
+    .form-container input,
+    .form-container textarea{
+        width: 50%;
+        font-size: 15px;
     }
     .grid{
         grid-template-columns: repeat(1,1fr);
@@ -486,16 +477,24 @@ font-weight: 600;
     .section-title{
         font-size: 2.5rem;
     }
-    .input-box input{
-        padding: 0.5rem 3rem;
-        width: 80%;
-        font-size: 1.5rem;
+   .form-container{
+       width: 100%;
+       gap: 1px;
+   }
+    .form-container input,
+    .form-container textarea{
+        width: 70%;
+        font-size: 14px;
+        padding: 10px;
     }
-    .input-box .input-row{
-        width: 100%;
+    textarea{
+        height: 120px;
     }
-    .input-box input::placeholder{
-        font-size: 0rem;
+    .error{
+        font-size: 14px;
+    }
+    .success{
+        font-size: 18px;
     }
     footer ul{
         gap: 1rem;
