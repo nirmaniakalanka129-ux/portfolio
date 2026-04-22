@@ -344,11 +344,6 @@ textarea{
     text-wrap:nowrap;
     transition: 0.2s ease-in-out;
 }
-.form-btn: hover{
-    background-color: black;
-    font-color: white;
-    transform: scale(1.02);
-}
 .error{
     color: red;
     font-size: 20px;
