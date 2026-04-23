@@ -7,7 +7,7 @@ text-decoration: none;
 scroll-behavior: smooth;
 list-style: none;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar{  /* adds scrollbar to the website */
     width: 20px;
 }
 ::-webkit-scrollbar-track{
@@ -17,7 +17,7 @@ list-style: none;
      background:linear-gradient(to bottom,rgb(23,101,149),rgb(151,29,151));
 }
 
-header{
+header{     /* attributes of the header */
     position: fixed;
     top: 1rem;
     left: 50%;
@@ -33,7 +33,7 @@ header{
     border-radius: 3rem;
     z-index: 1000;
 }
-.logo{
+.logo{   /* name logo */
     color: white;
     font-size: 1.3rem;
     font-weight: 600;
@@ -67,7 +67,7 @@ li a::before{
 li a:hover::before{
     width: 100%;
 }
-.visit-btn{
+.visit-btn{      /* to visit the Github page */
     padding: 0.8rem 1.5rem;
     border-radius: 3rem;
     border: none;
@@ -83,7 +83,7 @@ li a:hover::before{
     background: linear-gradient(to right, rgb(151, 29, 151), rgb(23,101,149));
     transform: scale(1.03);
 }
-#menu-icon{
+#menu-icon{   /* hides the menu icon from displaying in default desktop view */
     font-size: 2rem;
     display: none;
    
@@ -110,7 +110,7 @@ section{
     justify-content: center;
     gap: 10rem;
 }
-.about img{
+.about img{  /* profile image */
     width: 25vw;
     border-radius: 100%;
 }
@@ -122,7 +122,7 @@ section{
     justify-content: center;
     gap: 1.5rem;
 }
-.info-box h3{
+.info-box h3{  /*About page introductory texts */
 font-size: 1.8rem;
 font-weight: 500;
 opacity: 0.8;
@@ -141,7 +141,7 @@ font-weight: 600;
     display: flex;
     gap: 1rem;
 }
-.btn{
+.btn{ /* the button properties */
     border-radius: 3rem;
     padding: 0.5rem 1.5rem;
     border: 2px solid black;
@@ -154,7 +154,7 @@ font-weight: 600;
     background-color: black;
     color: white;
 }
-.socials{
+.socials{     /* LinkedIn and Github icon buttons */
     display: flex;
     gap: 2rem;
 }
@@ -167,7 +167,7 @@ font-weight: 600;
     transform: scale(1.1);
 }
 
-.section-title{
+.section-title{    /* titles of each section */
     text-align: center;
     font-size: 4rem;
     font-weight: 600;
@@ -180,7 +180,7 @@ font-weight: 600;
     gap: 5rem;
 }
 
-.grid{
+.grid{        /* display skills in a grid */
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 2rem;
@@ -218,7 +218,7 @@ font-weight: 600;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 2rem;
 }
-.project-card{
+.project-card{  /* project card attributes */
     padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
@@ -231,7 +231,7 @@ font-weight: 600;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
-.project-card:hover{
+.project-card:hover{  /* hover effects in project card */
     background-color: black;
     color: white;
     transform: translateY(10px) scale(1.02);
@@ -248,7 +248,7 @@ font-weight: 600;
     font-size: 1rem;
     font-weight: 300;
 }
-.blog-card{
+.blog-card{    /* to display the blog post */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -289,7 +289,7 @@ font-weight: 600;
     font-weight: 300;
     padding: 0.5rem 0;
 }
-.form-container{
+.form-container{   /* Contact Me form section */
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -306,7 +306,7 @@ font-weight: 600;
     margin-bottom: 15px;
     font-size: 4rem;
 }
-.form-container input,
+.form-container input,     /* input boxes for name, email and messages */
 .form-container textarea{
     display: block;
     justify-content: center;
@@ -330,7 +330,7 @@ textarea{
     resize: none;
     align-items: center;
 }
-.form-btn{
+.form-btn{    /* form send button */
     justify-content: center;
     align-items: center;
     width: 150px;
@@ -344,18 +344,18 @@ textarea{
     text-wrap:nowrap;
     transition: 0.2s ease-in-out;
 }
-.error{
+.error{  /* to display error messages for wrong input */
     color: red;
     font-size: 20px;
     margin-top: 1px;
 }
-.success{
+.success{  /* to display a message when the details are submitted properly */
     color: green;
     text-align: center;
     margin-top: 10px;
     font-size: 25px;
 }
-footer{
+footer{  /* footer of the website */
     bottom: 0;
     left: 0;
     height: 10rem;
@@ -377,11 +377,11 @@ footer ul li a{
 color: white;
 font-weight: 600;
 }
-.copyright{
+.copyright{ /* displays a copyright sign at the end of the website */
     font-size: 300;
     margin-top: 2rem;
 }
-@media(max-width:1200px){
+@media(max-width:1200px){  /* changes at 1200px */
     header{
         padding: 1rem 2rem;
         gap: 2rem;
@@ -397,7 +397,7 @@ font-weight: 600;
         padding: 1rem 2rem;
     }
 }
-@media(max-width:768px){
+@media(max-width:768px){   /* changes at 768px */
     header{
         gap:1rem;
         padding: 1rem 1rem;
@@ -431,7 +431,7 @@ font-weight: 600;
         grid-template-columns: repeat(1,1fr);
     }
 }
-@media(max-width:600px){
+@media(max-width:600px){  /* changes at 600px */
     header #menu-icon{
         display: block;
     }
